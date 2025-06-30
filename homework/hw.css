@@ -1,0 +1,716 @@
+body{
+    background: blanchedalmond;
+}
+#body{
+    width: 1000px;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    ul{
+        display: flex;
+        padding-top: 50px;
+        li{
+            list-style-type: none;
+            flex: 1;
+            padding: 18px;
+            width: 100px;
+            a{
+                text-decoration: none;
+                color: purple;
+                font-weight: bold;
+                font-variant: small-caps;
+                font-size: 22px;
+            }
+        }
+    }
+}
+nav > a{
+    display: inline-block;
+    background: url("ivana.png") no-repeat;
+    width: 398px;
+    height: 200px;
+}
+nav > ul li a:hover{
+    border: 4px dotted purple;
+    background-color: deeppink;
+}
+
+
+
+div#intro{
+    width: 1000px;
+    height: 1000px;
+
+    > div{
+        display: flex;
+
+        > div{
+            flex: 1;
+            display: flex;
+        }
+    }
+}
+div#intro  > div > div:first-of-type > a{
+    background: url("lisa.jpg") no-repeat;
+    width: 536px;
+    height: 900px;
+    border-radius: 5px;
+    background-position: -60px 70px;
+}
+div#intro  > div > div:first-of-type span{
+    display: block;
+    width: 150px;
+    height: 40px;
+    position: relative;
+    left: 333px;
+    top: 180px;
+
+    color: purple;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px 1px lightblue;
+}
+
+div#intro div.text{
+    span{
+        padding: 25px;
+        font-family: 'Poppins', sans-serif;
+    }
+    span.title{
+        font-style: italic;
+        color: purple;
+        text-align: center
+    }
+}
+div#title{
+    width: 150px;
+    display: block;
+    position: absolute;
+    bottom: 860px;
+    right: 1450px;
+    color: darkmagenta;
+    text-shadow: 2px 2px 1px palevioletred;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+
+div#img{
+    padding-top: 40px;
+
+    background: url("bg-footer.gif") repeat-x;
+    width: 960px;
+    height: 247px;
+
+    h2{
+        color: palevioletred;
+        text-align: center;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+
+    ul{
+        padding-right: 20px;
+        display: flex;
+        flex: 1;
+
+        li{
+            flex: 1;
+            list-style-type: none;
+            width: 120px;
+            a:nth-child(2){
+                display: block;
+                padding-top: 100px;
+                text-decoration: none;
+                color: hotpink;
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+
+
+        li.first{
+            background: url("lisa8.webp") no-repeat;
+            width: 98px;
+            height: 98px;
+        }
+        li:nth-child(2){
+            background: url("lisa9.webp") no-repeat;
+            width: 98px;
+            height: 98px;
+        }
+        li:nth-child(3){
+            background: url("down4.jpg") no-repeat;
+            width: 98px;
+            height: 98px;
+        }
+        li:nth-child(4){
+            background: url("down.webp") no-repeat;
+            width: 98px;
+            height: 98px;
+        }
+        li:nth-child(5){
+            background: url("down5.jpg") no-repeat;
+            width: 98px;
+            height: 98px;
+        }
+        li:nth-child(6){
+            background: url("lisa6.webp") no-repeat;
+            width: 98px;
+            height: 98px;
+        }
+        li:nth-child(7){
+            background: url("lisa7.webp") no-repeat;
+            width: 98px;
+            height: 98px;
+        }
+
+    }
+}
+
+
+div#footer{
+    background: url("rect.png") no-repeat;
+    width: 960px;
+    height: 500px;
+    background-position: -110px -35px;
+    border-radius: 15px;
+
+    div#table{
+        display: flex;
+        width: 550px;
+        margin-left: 225px;
+        padding-top: 112px;
+        div{
+            flex: 1;
+        }
+    }
+
+    div#table div#one{
+        width: 130px;
+        height: 130px;
+        margin-left: -17px;
+
+        h5{
+            text-indent: 5px;
+            text-decoration: underline;
+            color: darkblue;
+        }
+
+        ul li span{
+            font-style: italic;
+            font-size: 11px;
+        }
+    }
+
+    div#table div#two{
+        width: 130px;
+        height: 130px;
+        padding-top: 20px;
+        div{
+            font-style: italic;
+            color: darkmagenta;
+            padding: 5px;
+        }
+
+        a{
+            padding: 1px;
+            background: url("kafe.png") no-repeat;
+            height: 130px;
+            width: 130px;
+            display: inline-block;
+            background-position: -58px -39px;
+            border-radius: 15px;
+        }
+    }
+
+
+    div#table div#three{
+        width: 130px;
+        height: 130px;
+        h5{
+            text-indent: 5px;
+            text-decoration: underline;
+            color: darkblue;
+        }
+        div ul li{
+            list-style-type: circle;
+            font-size: 15px;
+            padding: 2px;
+        }
+    }
+
+    div#table div#four{
+        width: 130px;
+        height: 130px;
+
+        h5{
+            text-indent: 35px;
+            text-decoration: underline;
+            color: darkblue;
+        }
+        ul li{
+            list-style-type: none;
+        }
+        ul li > a{
+            text-decoration: none;
+        }
+        ul li{
+            padding: 7px;
+            a.facebook{
+                padding: 20px;
+                background: url("icons.png") no-repeat;
+                width: 38px;
+                height: 25px;
+                background-position: -16px -32px;
+            }
+            a.instagram{
+                padding: 20px;
+                background: url("icons.png") no-repeat;
+                width: 38px;
+                height: 25px;
+                background-position: -114px -32px;
+            }
+
+        }
+
+        ul li > div{
+            padding: 20px;
+            position: relative;
+            right: 15px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*hobby*/
+div#celohobby{
+    background: lightpink;
+}
+div#hobby {
+    background: url("pozadina.webp") no-repeat;
+    width: 1280px;
+    height: 1600px;
+    margin: auto;
+    border-radius: 15px;
+}
+nav#hobbynav{
+    margin-left: 157px;
+    position: relative;
+    top: -34px;
+}
+
+
+
+div#prvP{
+    margin: auto;
+    width: 800px;
+    div{
+        display: inline-block;
+    }
+
+    div#pic1{
+        figure img{
+            border-radius: 3px;
+        }
+        figure figcaption{
+            font-style: italic;
+            color: darkmagenta;
+            text-align: center;
+        }
+    }
+
+    div#exp1{
+        width: 400px;
+        font-family: Raleway, sans-serif;
+        color: darkblue;
+    }
+}
+
+
+div#vtorP{
+    padding-top: 10px;
+    margin: auto;
+    width: 800px;
+    div{
+        display: inline-block;
+    }
+
+
+    div#pic2{
+        figure img{
+            border-radius: 3px;
+        }
+        figure figcaption{
+            font-style: italic;
+            color: darkmagenta;
+            text-align: center;
+        }
+    }
+
+    div#exp2{
+        width: 400px;
+        font-family: Raleway, sans-serif;
+        color: darkblue;
+    }
+}
+
+div#tretP{
+    padding-top: 10px;
+    margin: auto;
+    width: 800px;
+    div{
+        display: inline-block;
+    }
+
+
+    div#pic3{
+
+        figure img{
+            border-radius: 3px;
+        }
+        figure figcaption{
+            font-style: italic;
+            color: darkmagenta;
+            text-align: center;
+        }
+    }
+
+    div#exp3{
+        margin-left: -35px;
+        width: 900px;
+        font-family: Raleway, sans-serif;
+        color: darkblue;
+    }
+}
+
+
+
+
+.lastPart {
+    display: flex;
+    width: 800px;
+    margin: auto;
+}
+.lastPart > div{
+    flex: 1;
+    padding: 40px;
+    p{
+        color: beige;
+        text-align: center;
+        border-top: darkgoldenrod 1px solid;
+        border-bottom: darkgoldenrod 1px solid;
+    }
+    p a{
+        color: beige;
+    }
+}
+.lastPart div.fig{
+    background: url(hobb.webp) no-repeat;
+    width: 256px;
+    height: 256px;
+    background-position-x: 30px;
+    background-position-y: 30px;
+}
+
+div#hobby > a{
+    margin-left: 565px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*travel*/
+div#general{
+    background: darkseagreen;
+}
+div#generalIns{
+    background: url("palmi.jpg") no-repeat;
+    height: 1680px;
+    width: 1200px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+nav#hobbytravel{
+    border: whitesmoke 6px dotted;
+    padding: 5px;
+    margin: 15px;
+}
+
+.TR{
+    background: url("ram.png") no-repeat;
+    width: 640px;
+    margin: auto;
+    height: 360px;
+    display: flex;
+}
+.TR > div{
+    flex: 1;
+}
+.TR div:first-of-type{
+    margin-top: 25px;
+    h1{
+        font-size: 18px;
+        text-align: center;
+        color: darkolivegreen;
+        font-weight: 700;
+        position: relative;
+        top: 10px;
+        left: 30px;
+    }
+    p{
+        color: darkslategrey;
+        font-size: 14px;
+        text-align: center;
+        width: 180px;
+        padding-left: 65px;
+    }
+}
+.TR div.slikTR{
+    background: url("bodrum.jpg") no-repeat;
+    width: 256px;
+    height: 256px;
+
+    position: relative;
+    top: 49px;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+.TR div:nth-of-type(3){
+    h3{
+        color: darkolivegreen;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    margin-top: 35px;
+    margin-right: 30px;
+}
+.TR div:nth-of-type(3) ul li {
+    padding: 20px;
+    a{
+        color: darkslategrey;
+    }
+}
+
+
+
+div#content{
+    display: inline-block;
+    padding-top: 55px;
+    div.article{
+        float: left;
+        width: 66%;
+
+        ul li{
+            list-style-type: none;
+        }
+        li a{
+            text-decoration: none;
+            color: darkgoldenrod;
+        }
+    }
+    div.aside{
+        float: right;
+        width: 33%;
+    }
+}
+div#content div.article ul#article_items_card li h2 a{
+    text-decoration: none;
+    color: antiquewhite;
+    text-transform: uppercase;
+}
+div#content div.article ul#article_items_card li:first-of-type > a{
+    display: inline-block;
+    background: url("tur.jpg") no-repeat;
+    width: 150px;
+    height: 109px;
+    background-position: -106px -119px;
+}
+div#content div.article ul#article_items_card li:first-of-type p{
+    display: inline-block;
+    padding-left: 200px;
+    margin-top: -60px;
+}
+div#content div.article ul#article_items_card li:last-of-type p{
+    display: inline-block;
+    padding-left: 200px;
+    margin-top: -60px;
+}
+
+
+
+div.aside{
+    h3{
+        color: antiquewhite;
+        padding-left: 40px;
+        font-size: 36px;
+    }
+
+    ul li{
+        list-style-type: none;
+        border-bottom: 1px dotted brown;
+        h2{
+            color: brown;
+        }
+        p{
+            color: wheat;
+        }
+    }
+}
+
+
+div#generalIns > a{
+    color: darkslategrey;
+    position: relative;
+    left: 475px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*signout*/
+div#whole{
+    background: lightskyblue;
+}
+div#wholeSO{
+    width: 1260px;
+    margin: auto;
+}
+div#goodbye{
+    width: 960px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin: auto;
+}
+div#sobirac{
+    width: 1260px;
+}
+div#student{
+    background: url("stud.jpg") no-repeat;
+    width: 667px;
+    height: 1000px;
+    background-position: 0px 0px;
+    margin: auto;
+}
+p#ps{
+    display: block;
+    width: 600px;
+    font-weight: 700;
+    color: darkblue;
+    position: relative;
+    top: -54px;
+    left: 350px;
+}
+
+
+
+div#reach{
+    width: 1000px;
+    margin: auto;
+    color: midnightblue;
+    display: flex;
+    flex: 1;
+
+    ul{
+        display: flex;
+        padding: 20px;
+        flex: 1;
+        align-items: baseline;
+        li{
+            list-style-type: none;
+            flex: 1;
+            align-items: baseline;
+        }
+    }
+
+    ul li.eden ul{
+        display: flex;
+        flex: 1;
+        margin-left: -60px;
+        padding-right: 20px;
+
+        li{
+            display: flex;
+            flex: 1;
+            padding: 10px;
+            list-style-type: none;
+
+            a{
+                text-decoration: none;
+                color: dodgerblue;
+            }
+        }
+    }
+
+}
+
+div#reach ul li:nth-of-type(2){
+    padding: 30px;
+    margin-left: 10px;
+    span{
+        color: darkblue;
+    }
+    a{
+        text-decoration: none;
+    }
+    a.facebook{
+        padding: 20px;
+        background: url("icon.png") no-repeat;
+        width: 38px;
+        height: 38px;
+        background-position: 3px 0px;
+    }
+    a.twitter{
+        padding: 20px;
+        background: url("icon.png") no-repeat;
+        width: 38px;
+        height: 38px;
+        background-position: 3px -304px;
+    }
+    a.googleplus{
+        padding: 20px;
+        background: url("icon.png") no-repeat;
+        width: 38px;
+        height: 38px;
+        background-position: 3px -151px;
+    }
+}
